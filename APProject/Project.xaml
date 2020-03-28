@@ -13,7 +13,7 @@
 
 
             <TabControl>
-                <TabItem Header="Tab1" Margin="-2,-2,-11,0">
+                <TabItem Header="Tab1" Margin="-2,-2,-11,0" x:Name="Tab1">
                     <Border Padding="1" Height="496">
                         <Grid Height="503">
 
@@ -37,23 +37,23 @@
                                 </Grid.ColumnDefinitions>
                                 <!--TextBlock and CheckBoxes-->
                                 <TextBlock Text="TextBox 1" Margin="10,10,225,988" FontWeight="Bold"/>
-                                <CheckBox Margin="19,48,141,947" RenderTransformOrigin="0.5,0.5" Content="Check1"/>
-                                <CheckBox Margin="19,78,141,917" RenderTransformOrigin="0.444,3.381" Content="Check2"/>
-                                <CheckBox Margin="19,108,141,888" RenderTransformOrigin="0.5,0.5" Content="Check3"/>
-                                <CheckBox Margin="171,48,10,947" RenderTransformOrigin="0.444,3.381" Content="Check4"/>
-                                <CheckBox Margin="171,78,10,917" RenderTransformOrigin="0.444,3.381" Content="Check5"/>
-                                <CheckBox Margin="171,108,10,888" RenderTransformOrigin="0.444,3.381" Content="Check6"/>
+                                <CheckBox Margin="19,48,141,947" RenderTransformOrigin="0.5,0.5" Content="Check1" x:Name="Check1" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+                                <CheckBox Margin="19,78,141,917" RenderTransformOrigin="0.444,3.381" Content="Check3" x:Name="Check3" Checked="Check3_Checked" Unchecked="Check3_Unchecked"/>
+                                <CheckBox Margin="19,108,141,888" RenderTransformOrigin="0.5,0.5" Content="Check5" x:Name="Check5" Checked="Check5_Checked" Unchecked="Check5_Unchecked"/>
+                                <CheckBox Margin="171,48,10,947" RenderTransformOrigin="0.444,3.381" Content="Check2" x:Name="Check2" IsEnabled="False"/>
+                                <CheckBox Margin="171,78,10,917" RenderTransformOrigin="0.444,3.381" Content="Check4" x:Name="Check4" IsEnabled="False"/>
+                                <CheckBox Margin="171,108,10,888" RenderTransformOrigin="0.444,3.381" Content="Check6" x:Name="Check6" IsEnabled="False"/>
                                 <ComboBox Grid.Column="1" Margin="0,48,0,947"/>
                             </Grid>
                             <TextBlock Text="Notes" Grid.ColumnSpan="2" Margin="10,256,147,221" FontWeight="Bold"/>
                             <TextBox Margin="19,287,19,79" Grid.ColumnSpan="3"/>
-                            <Button Margin="10,446,10,27" Grid.Column="1" Content="Tab2"/>
+                            <Button Margin="10,446,10,27" Grid.Column="1" Content="Tab2" Click="Button_Click"/>
                         </Grid>
                     </Border>
 
                 </TabItem>
 
-                <TabItem Header="Tab2" Margin="11,-2,-24,0">
+                <TabItem Header="Tab2" Margin="11,-2,-24,0" x:Name="Tab2">
 
 
                     <Grid Height="493">
