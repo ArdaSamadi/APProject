@@ -1,0 +1,14 @@
+D:\Programming\APProject\APProject\bin\Debug\APProject.exe.config
+D:\Programming\APProject\APProject\bin\Debug\APProject.exe
+D:\Programming\APProject\APProject\bin\Debug\APProject.pdb
+D:\Programming\APProject\APProject\obj\Debug\APProject.csprojAssemblyReference.cache
+D:\Programming\APProject\APProject\obj\Debug\App.g.cs
+D:\Programming\APProject\APProject\obj\Debug\APProject_MarkupCompile.cache
+D:\Programming\APProject\APProject\obj\Debug\APProject_MarkupCompile.lref
+D:\Programming\APProject\APProject\obj\Debug\APProject.g.resources
+D:\Programming\APProject\APProject\obj\Debug\APProject.Properties.Resources.resources
+D:\Programming\APProject\APProject\obj\Debug\APProject.csproj.GenerateResource.cache
+D:\Programming\APProject\APProject\obj\Debug\APProject.exe
+D:\Programming\APProject\APProject\obj\Debug\APProject.pdb
+D:\Programming\APProject\APProject\obj\Debug\Project.g.cs
+D:\Programming\APProject\APProject\obj\Debug\Project.baml
