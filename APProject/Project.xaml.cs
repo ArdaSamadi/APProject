@@ -23,41 +23,26 @@ namespace APProject
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-            Check2.IsEnabled = true;
-        }
-
-        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
-        {
-            Check2.IsEnabled = false;
-        }
-
-        private void Check3_Unchecked(object sender, RoutedEventArgs e)
-        {
-            Check4.IsEnabled = false;
-        }
-
-        private void Check3_Checked(object sender, RoutedEventArgs e)
-        {
-            Check4.IsEnabled = true;
-        }
-
-        private void Check5_Checked(object sender, RoutedEventArgs e)
-        {
-            Check6.IsEnabled = true;
-        }
-
-        private void Check5_Unchecked(object sender, RoutedEventArgs e)
-        {
-            Check6.IsEnabled = false;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void NextTab_Click(object sender, RoutedEventArgs e)
         {
             Tab2.IsSelected = true;
+        }
+
+        
+
+        private void Check_Checked(object sender, RoutedEventArgs e)
+        {
+            CheckBox check = sender as CheckBox;
+            Combo.Items.Add(check.Content);
+        }
+
+        private void Check_Unchecked(object sender, RoutedEventArgs e)
+        {
+            CheckBox check = sender as CheckBox;
+            Combo.Items.Remove(check.Content);
         }
     }
 }

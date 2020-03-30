@@ -37,17 +37,17 @@
                                 </Grid.ColumnDefinitions>
                                 <!--TextBlock and CheckBoxes-->
                                 <TextBlock Text="TextBox 1" Margin="10,10,225,988" FontWeight="Bold"/>
-                                <CheckBox Margin="19,48,141,947" RenderTransformOrigin="0.5,0.5" Content="Check1" x:Name="Check1" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
-                                <CheckBox Margin="19,78,141,917" RenderTransformOrigin="0.444,3.381" Content="Check3" x:Name="Check3" Checked="Check3_Checked" Unchecked="Check3_Unchecked"/>
-                                <CheckBox Margin="19,108,141,888" RenderTransformOrigin="0.5,0.5" Content="Check5" x:Name="Check5" Checked="Check5_Checked" Unchecked="Check5_Unchecked"/>
-                                <CheckBox Margin="171,48,10,947" RenderTransformOrigin="0.444,3.381" Content="Check2" x:Name="Check2" IsEnabled="False"/>
-                                <CheckBox Margin="171,78,10,917" RenderTransformOrigin="0.444,3.381" Content="Check4" x:Name="Check4" IsEnabled="False"/>
-                                <CheckBox Margin="171,108,10,888" RenderTransformOrigin="0.444,3.381" Content="Check6" x:Name="Check6" IsEnabled="False"/>
-                                <ComboBox Grid.Column="1" Margin="0,48,0,947"/>
+                                <CheckBox Margin="19,48,141,947" RenderTransformOrigin="0.5,0.5" Content="Check1" x:Name="Check1" Checked="Check_Checked" Unchecked="Check_Unchecked"/>
+                                <CheckBox Margin="19,78,141,917" RenderTransformOrigin="0.444,3.381" Content="Check3" x:Name="Check3" Checked="Check_Checked" Unchecked="Check_Unchecked"/>
+                                <CheckBox Margin="19,108,141,888" RenderTransformOrigin="0.5,0.5" Content="Check5" x:Name="Check5" Checked="Check_Checked" Unchecked="Check_Unchecked"/>
+                                <CheckBox Margin="171,48,10,947" RenderTransformOrigin="0.444,3.381" Content="Check2" x:Name="Check2" Checked="Check_Checked" Unchecked="Check_Unchecked"/>
+                                <CheckBox Margin="171,78,10,917" RenderTransformOrigin="0.444,3.381" Content="Check4" x:Name="Check4" Checked="Check_Checked" Unchecked="Check_Unchecked"/>
+                                <CheckBox Margin="171,108,10,888" RenderTransformOrigin="0.444,3.381" Content="Check6" x:Name="Check6" Checked="Check_Checked" Unchecked="Check_Unchecked"/>
+                                <ComboBox Name="Combo" Grid.Column="1" Margin="0,48,0,947"/>
                             </Grid>
                             <TextBlock Text="Notes" Grid.ColumnSpan="2" Margin="10,256,147,221" FontWeight="Bold"/>
-                            <TextBox Margin="19,287,19,79" Grid.ColumnSpan="3"/>
-                            <Button Margin="10,446,10,27" Grid.Column="1" Content="Tab2" Click="Button_Click"/>
+                            <TextBox x:Name="Notes" Margin="19,287,19,79" TextWrapping="Wrap" Grid.ColumnSpan="3" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+                            <Button x:Name="NextTab" Margin="10,446,10,27" Grid.Column="1" Content="Tab2" Click="NextTab_Click"/>
                         </Grid>
                     </Border>
 
@@ -61,6 +61,7 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="3*"/>
                         </Grid.ColumnDefinitions>
+                        <TextBlock Text="TextBlock" Grid.Column="1" Margin="228,0,10,471"/>
                         <TextBlock Grid.Column="0" Text="Name : " Margin="10,31,53,438" FontWeight="Bold" RenderTransformOrigin="0.503,1.097"/>
                         <TextBox Grid.Column="1" Margin="10,31,10,438"/>
                         <TextBlock Grid.Column="0" Text="Family : " Margin="10,79,53,388" FontWeight="Bold"/>
@@ -68,8 +69,8 @@
                         <TextBlock Grid.Column="0" Text="Age : " Margin="10,127,53,344" FontWeight="Bold"/>
                         <TextBox Grid.Column="1" Margin="10,127,10,344"/>
                         <TextBlock Grid.Column="0" Text="Equations : " Margin="10,189,23,279" FontWeight="Bold"/>
-                        <TextBox Grid.Column="1" Margin="10,189,10,149"/>
-                        
+                        <TextBox Grid.Column="1" Margin="10,189,10,149" TextWrapping="NoWrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+                        <Image Margin="0,365,110,10" Grid.Column="1" Source="/APProject;component/Images/pic1.png"/>
                     </Grid>
                 </TabItem>
 
